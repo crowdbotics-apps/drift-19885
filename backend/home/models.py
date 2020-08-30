@@ -47,3 +47,9 @@ class Message(models.Model):
         on_delete=models.CASCADE,
         related_name="message_inbox",
     )
+
+
+class UserRewards(models.Model):
+    "Generated Model"
+    points = models.BigIntegerField()
+    date = models.DateTimeField()
